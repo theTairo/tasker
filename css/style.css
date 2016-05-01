@@ -1,14 +1,22 @@
 body {
     background-color: azure;
+    font-family: Calibri;
 }
 
-.container {
+.logo-box {
     margin-left: auto;
     margin-right: auto;
-    background-color: cadetblue;
+    width: 80%;
+    border-left: solid black;
+}
+
+.task-box {
+    margin-left: auto;
+    margin-right: auto;
     width: 80%;
 }
 
-h1 {
-    color: red;
+.row {
+    
 }
+
