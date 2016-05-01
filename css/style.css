@@ -15,8 +15,8 @@ body {
     margin-right: auto;
     width: 80%;
 }
-
-.row {
-    
+.task-box > div {
+    font-size: 25px;
 }
+
 
