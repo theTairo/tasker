@@ -25,6 +25,20 @@
         </div>
         <div class="container task-box">
             
+            <div class="add-box">
+            <form action="add.php" method="post"> 
+                 
+                 <div class="row">
+                    <input type="number" name="priority" min="1" max="5" class="col-xs-10 col-sm-1 col-md-1 col-lg-1" />
+                    <input type="text" name="name" class="col-xs-12 col-sm-4 col-md-4 col-lg-4" />
+                    <input type="text" name="date" class="col-xs-12 col-sm-2 col-md-2 col-lg-2" />
+                    <input type="text" name="description" class="col-xs-12 col-sm-4 col-md-4 col-lg-4" />
+                    <input id="submitButton" type="submit" value="Add" />
+                 </div>
+                
+            </form>
+            </div>
+            
             <?php          
             
             foreach ($_SESSION['tasks'] as $key => $value) {
@@ -33,10 +47,10 @@
             
             '<div class="row">
                 
-                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">'.$value['priority'].'</div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">'.$value['name'].'</div>
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">'.$value['date'].'</div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">'.$value['description'].'</div>
+                <div class="col-xs-2 col-sm-1 col-md-1 col-lg-1">'.$value['priority'].'</div>
+                <div class="col-xs-10 col-sm-4 col-md-4 col-lg-4">'.$value['name'].'</div>
+                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">'.$value['date'].'</div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">'.$value['description'].'</div>
                 <a href="delete.php?id='.$value['id'].'"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">X</div></a>
             </div>';
             
@@ -48,9 +62,10 @@
 
     </div>
 
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

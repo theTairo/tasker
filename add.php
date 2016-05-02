@@ -2,10 +2,11 @@
 
     include('connect.php');
     
-    $name = "test";
-    $priority = 1;
-    $description = "none";
-    $date = "25.02.2015";
+
+    $name = $_POST['name'];
+    $priority = $_POST['priority'];
+    $description = $_POST['description'];
+    $date = $_POST['date'];
       
     $stmt = $db->prepare('INSERT INTO `tasks` (`id`, `name`, `priority`, `description`, `date`) VALUES (NULL, :name, :priority, :description, :date)');
     
@@ -15,5 +16,7 @@
     $stmt -> bindValue(':date', $name, PDO::PARAM_STR);
     
     $stmt->execute();
+    
+    header('Location: index.php');
     
     ?>
