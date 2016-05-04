@@ -17,7 +17,7 @@
 </head>
 
 <body>
-
+    
     <div class="container">
 
         <div class="container logo-box">
@@ -28,7 +28,7 @@
             <div class="add-box">
             <form action="add.php" method="post"> 
                  
-                 <div class="row">
+                 <div class="row no-border">
                     <input type="number" name="priority" min="1" max="5" class="col-xs-10 col-sm-1 col-md-1 col-lg-1" />
                     <input type="text" name="name" class="col-xs-12 col-sm-4 col-md-4 col-lg-4" />
                     <input type="text" name="date" class="col-xs-12 col-sm-2 col-md-2 col-lg-2" />

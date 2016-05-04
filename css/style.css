@@ -6,8 +6,14 @@ body {
 .logo-box {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
     width: 80%;
     border-left: solid black;
+}
+
+.logo-box > h1 {
+    font-size: 55px;
+    letter-spacing: 4px;
 }
 
 .task-box {
@@ -17,11 +23,20 @@ body {
 }
 .task-box > div {
     font-size: 25px;
+    text-align: center;
 }
 
 .add-box {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.no-border {
+    border: 0 !important;
+}
+
+.row {
+    border-bottom: solid black;
 }
 
 
