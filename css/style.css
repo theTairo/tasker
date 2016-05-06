@@ -7,7 +7,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    width: 80%;
+    width: 90%;
     border-left: solid black;
 }
 
@@ -19,7 +19,7 @@ body {
 .task-box {
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 90%;
 }
 .task-box > div {
     font-size: 25px;
@@ -38,5 +38,9 @@ body {
 .row {
     border-bottom: solid black;
 }
+
+[class^="col"] {
+    height: 50px;
+ }
 
 

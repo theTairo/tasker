@@ -18,7 +18,7 @@
 
 <body>
     
-    <div class="container">
+    <main class="container">
 
         <div class="container logo-box">
             <h1>tasker</h1>
@@ -29,11 +29,11 @@
             <form action="add.php" method="post"> 
                  
                  <div class="row no-border">
-                    <input type="number" name="priority" min="1" max="5" class="col-xs-10 col-sm-1 col-md-1 col-lg-1" />
-                    <input type="text" name="name" class="col-xs-12 col-sm-4 col-md-4 col-lg-4" />
-                    <input type="text" name="date" class="col-xs-12 col-sm-2 col-md-2 col-lg-2" />
-                    <input type="text" name="description" class="col-xs-12 col-sm-4 col-md-4 col-lg-4" />
-                    <input id="submitButton" type="submit" value="Add" />
+                    <input id="numberInput" type="number" name="priority" min="1" max="5" class="col-xs-3 col-sm-1 col-md-1 col-lg-1"/>
+                    <input type="text" placeholder="name" name="name" class="col-xs-9 col-sm-4 col-md-4 col-lg-4" />
+                    <input type="date" name="date" class="col-xs-12 col-sm-2 col-md-2 col-lg-2" />
+                    <input type="text" placeholder="description" name="description" class="col-xs-12 col-sm-4 col-md-4 col-lg-4" />
+                    <input id="submitButton" type="submit" value="Add" class="no-border col-xs-12 col-sm-6 col-md-1" />
                  </div>
                 
             </form>
@@ -47,11 +47,13 @@
             
             '<div class="row">
                 
-                <div class="col-xs-2 col-sm-1 col-md-1 col-lg-1">'.$value['priority'].'</div>
-                <div class="col-xs-10 col-sm-4 col-md-4 col-lg-4">'.$value['name'].'</div>
+                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">'.$value['priority'].'</div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">'.$value['name'].'</div>
                 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">'.$value['date'].'</div>
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">'.$value['description'].'</div>
-                <a href="delete.php?id='.$value['id'].'"><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">X</div></a>
+                <a href="#"><div class="col-xs-6 col-sm-1 col-md-1 col-lg-1">E</div></a>
+                <a href="delete.php?id='.$value['id'].'"><div class="col-xs-6 col-sm-1 col-md-1 col-lg-1">X</div></a>
+                
             </div>';
             
             }
@@ -60,7 +62,7 @@
 
         </div>
 
-    </div>
+    </main>
 
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
