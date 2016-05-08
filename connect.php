@@ -12,7 +12,7 @@
    }
    catch(PDOException $e)
    {
-      echo 'Połączenie nie mogło zostać utworzone: ' . $e->getMessage();
+      echo 'Connection failed ' . $e->getMessage();
    }
 
 
