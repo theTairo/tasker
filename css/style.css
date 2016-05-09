@@ -16,6 +16,14 @@ body {
     letter-spacing: 4px;
 }
 
+.sort-box {
+    margin-bottom: 30px;
+}
+
+.btn {
+    border-radius: 0;
+}
+
 .task-box {
     margin-left: auto;
     margin-right: auto;
