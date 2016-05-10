@@ -1,7 +1,7 @@
 <?php
 
     
-    include_once('/database/config.php');
+    include_once('database/config.php');
     
    try
    {
