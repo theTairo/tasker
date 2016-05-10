@@ -1,7 +1,3 @@
-<?php
-
-    
-?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -17,9 +13,10 @@
                     
                     <header>Login in</header>
                     
-                    <input type="text" placeholder="username"> <br />
-                    <input type="password" placeholder="password"> </br>
-                    <input class="submit" type="submit" value="login">   
+                    <input type="text" name="username" placeholder="user"> <br />
+                    <input type="password" name="password" placeholder="password" > </br>
+                    <input type="submit" value="login">
+                       
                 </form>
             
     

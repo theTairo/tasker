@@ -1,6 +1,6 @@
 <?php
 
-    include('connect.php');
+    include('database/connect.php');
     
     $id = isSet( $_GET['id'] ) ? intval( $_GET['id'] ) : 0;
     echo $id;   

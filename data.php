@@ -1,8 +1,11 @@
 <?php
 
-      include('connect.php');
-
-      $stmt = $db ->query('SELECT * FROM tasks');
+      include('database/connect.php');      
+      
+      $stmt = $db->query('ALTER TABLE tasks AUTO_INCREMENT = 1');
+      $stmt = $db ->prepare('SELECT * FROM tasks WHERE user_id = :userId');
+      $stmt -> bindValue(':userId', $_SESSION['userId']);
+      $stmt -> Execute();
       $data = $stmt->fetchall(PDO::FETCH_ASSOC);
       $tasks = [];
       
@@ -11,6 +14,6 @@
       }
       
       $_SESSION['tasks'] = $tasks;
-    
+          
  
   ?>

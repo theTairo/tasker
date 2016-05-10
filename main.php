@@ -1,6 +1,13 @@
 <?php
-    
+   
    session_start();
+   
+   if(!(isset($_SESSION['logged']) && $_SESSION['logged'] == true))
+   {
+    
+        header('Location: index.php');  
+   }
+   
    include ('data.php');
     
 ?>
@@ -22,6 +29,10 @@
 
         <div class="container logo-box">
             <h1>tasker</h1>
+            <?php
+            echo '<h2>Hello '.$_SESSION['username'].'!</h2>';
+            echo '<a href="logout.php"><h3>Logout</h3></a>';
+            ?>
         </div>
         
         <div class="container task-box">
@@ -54,7 +65,8 @@
             
             <div class="task-list"> 
            
-            <?php          
+            <?php
+                                  
             foreach ($_SESSION['tasks'] as $key => $value) {
                       
             echo
