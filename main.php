@@ -54,9 +54,8 @@
             
                 <div class="row no-border">
                 
-                    <div class="btn btn-warning col-xs-4 col-sm-4 col-md-4 col-lg-4">Priority</div>
-                    <div class="btn btn-danger col-xs-4 col-sm-4 col-md-4 col-lg-4">Date</div>
-                    <div class="btn btn-info col-xs-4 col-sm-4 col-md-4 col-lg-4">Alphabetical</div>
+                    <div class="btn btn-warning col-xs-6 col-sm-6 col-md-6 col-lg-6">Priority</div>
+                    <div class="btn btn-info col-xs-6 col-sm-6 col-md-6 col-lg-6">Alphabetical</div>
                     
                 </div>
             
@@ -73,8 +72,7 @@
             '<div class="row">
                 
                 <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">'.$value['priority'].'</div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">'.$value['name'].'</div>
-                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">'.$value['date'].'</div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">'.$value['name'].'</div>
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">'.$value['description'].'</div>
                 <a href="#"><div class="col-xs-6 col-sm-1 col-md-1 col-lg-1">E</div></a>
                 <a href="delete.php?id='.$value['id'].'"><div class="col-xs-6 col-sm-1 col-md-1 col-lg-1">X</div></a>
