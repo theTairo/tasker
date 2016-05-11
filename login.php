@@ -1,6 +1,13 @@
 <?php
-
+    
     session_start();
+    
+    if($_SESSION['logged'] == true) 
+    {
+        header('Location: main.php');
+        exit();
+    }
+    
     include('database/connect.php');
     
     $username = $_POST['username'];

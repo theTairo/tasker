@@ -43,9 +43,8 @@
                  <div class="row no-border">
                     <input value="1" id="numberInput" type="number" name="priority" min="1" max="5" class="col-xs-3 col-sm-1 col-md-1 col-lg-1"/>
                     <input type="text" placeholder="name" name="name" class="col-xs-9 col-sm-4 col-md-4 col-lg-4" />
-                    <input type="date" name="date" class="col-xs-12 col-sm-2 col-md-2 col-lg-2" />
-                    <input type="text" placeholder="description" name="description" class="col-xs-12 col-sm-4 col-md-4 col-lg-4" />
-                    <input id="submitButton" type="submit" value="Add" class="no-border col-xs-12 col-sm-6 col-md-1" />
+                    <input type="text" placeholder="description" name="description" class="col-xs-12 col-sm-4 col-md-4 col-lg-6" />
+                    <input id="submitButton" type="submit" value="Add" class="btn btn-primary col-xs-12 col-sm-6 col-md-1" />
                  </div>
                 
                 </form>
